@@ -186,7 +186,7 @@ jobs:
   stage-b-test-4-npu-a3:
     needs: [check-changes, pr-gate]
     if: needs.check-changes.outputs.main_package == 'true'
-    runs-on: linux-aarch64-a3-4
+    runs-on: linux-aarch64-a3-test-4-label
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:8.5.0-a3-ubuntu22.04-py3.11
     steps:
@@ -236,7 +236,7 @@ jobs:
   stage-b-test-16-npu-a3:
     needs: [check-changes, pr-gate]
     if: needs.check-changes.outputs.main_package == 'true'
-    runs-on: linux-aarch64-a3-16
+    runs-on: linux-aarch64-a3-test-16-label
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:8.5.0-a3-ubuntu22.04-py3.11
     steps:
@@ -285,7 +285,7 @@ jobs:
   multimodal-gen-test-1-npu-a3:
     needs: [check-changes, pr-gate]
     if: needs.check-changes.outputs.multimodal_gen == 'true'
-    runs-on: linux-aarch64-a3-2
+    runs-on: linux-aarch64-a3-test-2-label
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:8.3.rc2-a3-ubuntu22.04-py3.11
     steps:
@@ -343,7 +343,7 @@ jobs:
   multimodal-gen-test-2-npu-a3:
     needs: [check-changes, pr-gate]
     if: needs.check-changes.outputs.multimodal_gen == 'true'
-    runs-on: linux-aarch64-a3-16
+    runs-on: linux-aarch64-a3-test-16-label
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:8.3.rc2-a3-ubuntu22.04-py3.11
     steps:
@@ -401,7 +401,7 @@ jobs:
   multimodal-gen-test-8-npu-a3:
     needs: [check-changes, pr-gate]
     if: needs.check-changes.outputs.multimodal_gen == 'true'
-    runs-on: linux-aarch64-a3-8
+    runs-on: linux-aarch64-a3-test-8-label
     container:
       image: swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:8.5.0-a3-ubuntu22.04-py3.11
     steps:

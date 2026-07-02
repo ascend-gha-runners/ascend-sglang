@@ -6,7 +6,7 @@ on:
       runner:
         required: true
         type: string
-        default: linux-aarch64-a3-16
+        default: linux-aarch64-a3-test-16-label
       test_type:
         required: false
         type: string
