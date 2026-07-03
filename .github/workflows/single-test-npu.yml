@@ -2,6 +2,7 @@ name: Single Test (NPU)
 # test round 1: <测试用例描述>
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - testcases
